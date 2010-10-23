@@ -67,7 +67,6 @@ class ArgentumSpec extends Spec with ShouldMatchers {
         Nil
       val candles = candlesticks(negocios)
       candles.size should equal(3)
-      println(candles)
       candles(0).abertura should be(40.5 plusOrMinus EPS)
       candles(0).fechamento should be(42.3 plusOrMinus EPS)
       candles(1).abertura should be(48.8 plusOrMinus EPS)
